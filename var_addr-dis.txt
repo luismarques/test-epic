@@ -1,0 +1,3 @@
+
+var_addr.o:     file format elf32-littlearm
+

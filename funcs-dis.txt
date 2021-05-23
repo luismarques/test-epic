@@ -1,0 +1,17 @@
+
+funcs.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <fn2>:
+   0:	b510      	push	{r4, lr}
+   2:	f7ff fffe 	bl	0 <fn1>
+   6:	bd10      	pop	{r4, pc}
+
+00000008 <fn3>:
+   8:	464a      	mov	r2, r9
+   a:	4b01      	ldr	r3, [pc, #4]	; (10 <fn3+0x8>)
+   c:	58d0      	ldr	r0, [r2, r3]
+   e:	4770      	bx	lr
+  10:	00000000 	.word	0x00000000

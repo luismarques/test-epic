@@ -1,0 +1,31 @@
+
+ro_var.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <f_ro_var_extern>:
+   0:	464a      	mov	r2, r9
+   2:	4b02      	ldr	r3, [pc, #8]	; (c <f_ro_var_extern+0xc>)
+   4:	58d3      	ldr	r3, [r2, r3]
+   6:	6818      	ldr	r0, [r3, #0]
+   8:	4770      	bx	lr
+   a:	46c0      	nop			; (mov r8, r8)
+   c:	00000000 	.word	0x00000000
+
+00000010 <f_ro_var_noinit>:
+  10:	464a      	mov	r2, r9
+  12:	4b02      	ldr	r3, [pc, #8]	; (1c <f_ro_var_noinit+0xc>)
+  14:	58d3      	ldr	r3, [r2, r3]
+  16:	6818      	ldr	r0, [r3, #0]
+  18:	4770      	bx	lr
+  1a:	46c0      	nop			; (mov r8, r8)
+  1c:	00000000 	.word	0x00000000
+
+00000020 <f_ro_var_init_zero>:
+  20:	2000      	movs	r0, #0
+  22:	4770      	bx	lr
+
+00000024 <f_ro_var_init>:
+  24:	2007      	movs	r0, #7
+  26:	4770      	bx	lr
