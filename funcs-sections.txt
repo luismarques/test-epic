@@ -8,13 +8,13 @@ Section Headers:
   [ 3] .data             PROGBITS        00000000 000048 000000 00  WA  0   0  1
   [ 4] .bss              NOBITS          00000000 000048 000000 00  WA  0   0  1
   [ 5] .GCC.command.line PROGBITS        00000000 000048 000281 01  MS  0   0  1
-  [ 6] .data.rel         PROGBITS        00000000 0002cc 000004 00  WA  0   0  4
-  [ 7] .rel.data.rel     REL             00000000 00049c 000008 08   I 10   6  4
+  [ 6] .data.rel.ro      PROGBITS        00000000 0002cc 000004 00  WA  0   0  4
+  [ 7] .rel.data.rel.ro  REL             00000000 00049c 000008 08   I 10   6  4
   [ 8] .comment          PROGBITS        00000000 0002d0 00005a 01  MS  0   0  1
   [ 9] .ARM.attributes   ARM_ATTRIBUTES  00000000 00032a 00002c 00      0   0  1
   [10] .symtab           SYMTAB          00000000 000358 000110 10     11  13  4
   [11] .strtab           STRTAB          00000000 000468 000022 00      0   0  1
-  [12] .shstrtab         STRTAB          00000000 0004a4 000069 00      0   0  1
+  [12] .shstrtab         STRTAB          00000000 0004a4 00006c 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
   L (link order), O (extra OS processing required), G (group), T (TLS),

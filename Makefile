@@ -20,21 +20,25 @@ build:
 	$(CC) $(CFLAGS) -S funcs.c
 	$(CC) $(CFLAGS) -c funcs.c
 	$(OBJDUMP) -d funcs.o > funcs-dis.txt
+	$(OBJDUMP) --reloc funcs.o > funcs-rels.txt
 	readelf -WS funcs.o > funcs-sections.txt
 
 	$(CC) $(CFLAGS) -S rw_var.c
 	$(CC) $(CFLAGS) -c rw_var.c
 	$(OBJDUMP) -d rw_var.o > rw_var-dis.txt
+	$(OBJDUMP) --reloc rw_var.o > rw_var-rels.txt
 	readelf -WS rw_var.o > rw_var-sections.txt
 
 	$(CC) $(CFLAGS) -S ro_var.c
 	$(CC) $(CFLAGS) -c ro_var.c
 	$(OBJDUMP) -d ro_var.o > ro_var-dis.txt
+	$(OBJDUMP) --reloc ro_var.o > ro_var-rels.txt
 	readelf -WS ro_var.o > ro_var-sections.txt
 
 	$(CC) $(CFLAGS) -S var_addr.c
 	$(CC) $(CFLAGS) -c var_addr.c
 	$(OBJDUMP) -d var_addr.o > var_addr-dis.txt
+	$(OBJDUMP) --reloc var_addr.o > var_addr-rels.txt
 	readelf -WS var_addr.o > var_addr-sections.txt
 
 .PHONY: build

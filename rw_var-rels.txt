@@ -1,0 +1,8 @@
+
+rw_var.o:     file format elf32-littlearm
+
+RELOCATION RECORDS FOR [.text]:
+OFFSET   TYPE              VALUE 
+0000000c R_ARM_GOT32       rw_var_1
+
+

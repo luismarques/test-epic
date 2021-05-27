@@ -89,6 +89,7 @@
 	.ascii	"-fPIC"
 	.space	1
 	.text
+	.global	p_ext
 	.global	p_ro
 	.global	ro
 	.global	p_rw
@@ -113,6 +114,10 @@ p_rw:
 	.word	rw
 	.section	.data.rel.ro,"aw"
 	.align	2
+	.type	p_ext, %object
+	.size	p_ext, 4
+p_ext:
+	.word	ext
 	.type	p_ro, %object
 	.size	p_ro, 4
 p_ro:

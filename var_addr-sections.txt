@@ -1,4 +1,4 @@
-There are 15 section headers, starting at offset 0x540:
+There are 15 section headers, starting at offset 0x570:
 
 Section Headers:
   [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
@@ -9,14 +9,14 @@ Section Headers:
   [ 4] .GCC.command.line PROGBITS        00000000 000038 000284 01  MS  0   0  1
   [ 5] .rodata           PROGBITS        00000000 0002bc 000004 00   A  0   0  4
   [ 6] .data.rel         PROGBITS        00000000 0002c0 000004 00  WA  0   0  4
-  [ 7] .rel.data.rel     REL             00000000 0004b0 000008 08   I 12   6  4
-  [ 8] .data.rel.ro      PROGBITS        00000000 0002c4 000004 00  WA  0   0  4
-  [ 9] .rel.data.rel.ro  REL             00000000 0004b8 000008 08   I 12   8  4
-  [10] .comment          PROGBITS        00000000 0002c8 00005a 01  MS  0   0  1
-  [11] .ARM.attributes   ARM_ATTRIBUTES  00000000 000322 000031 00      0   0  1
-  [12] .symtab           SYMTAB          00000000 000354 000140 10     13  16  4
-  [13] .strtab           STRTAB          00000000 000494 000019 00      0   0  1
-  [14] .shstrtab         STRTAB          00000000 0004c0 00007e 00      0   0  1
+  [ 7] .rel.data.rel     REL             00000000 0004d8 000008 08   I 12   6  4
+  [ 8] .data.rel.ro      PROGBITS        00000000 0002c4 000008 00  WA  0   0  4
+  [ 9] .rel.data.rel.ro  REL             00000000 0004e0 000010 08   I 12   8  4
+  [10] .comment          PROGBITS        00000000 0002cc 00005a 01  MS  0   0  1
+  [11] .ARM.attributes   ARM_ATTRIBUTES  00000000 000326 000031 00      0   0  1
+  [12] .symtab           SYMTAB          00000000 000358 000160 10     13  16  4
+  [13] .strtab           STRTAB          00000000 0004b8 00001f 00      0   0  1
+  [14] .shstrtab         STRTAB          00000000 0004f0 00007e 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
   L (link order), O (extra OS processing required), G (group), T (TLS),

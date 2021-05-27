@@ -129,7 +129,7 @@ fn3:
 	.word	fn1(GOT)
 	.size	fn3, .-fn3
 	.global	fn_var
-	.section	.data.rel,"aw"
+	.section	.data.rel.ro,"aw"
 	.align	2
 	.type	fn_var, %object
 	.size	fn_var, 4

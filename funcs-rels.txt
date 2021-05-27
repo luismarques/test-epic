@@ -1,0 +1,14 @@
+
+funcs.o:     file format elf32-littlearm
+
+RELOCATION RECORDS FOR [.text]:
+OFFSET   TYPE              VALUE 
+00000002 R_ARM_THM_CALL    fn1
+00000010 R_ARM_GOT32       fn1
+
+
+RELOCATION RECORDS FOR [.data.rel.ro]:
+OFFSET   TYPE              VALUE 
+00000000 R_ARM_ABS32       fn1
+
+

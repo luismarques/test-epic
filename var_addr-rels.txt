@@ -1,0 +1,14 @@
+
+var_addr.o:     file format elf32-littlearm
+
+RELOCATION RECORDS FOR [.data.rel]:
+OFFSET   TYPE              VALUE 
+00000000 R_ARM_ABS32       rw
+
+
+RELOCATION RECORDS FOR [.data.rel.ro]:
+OFFSET   TYPE              VALUE 
+00000000 R_ARM_ABS32       ext
+00000004 R_ARM_ABS32       ro
+
+
